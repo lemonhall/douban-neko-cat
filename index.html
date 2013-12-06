@@ -1,0 +1,342 @@
+
+<!DOCTYPE html />
+<html>
+
+<head>
+<title>Neko</title>
+<style type="text/css">
+@keyframes mymove
+{	
+0%  {left:0px; background-position: 0px 0px; }
+1.99%  {left:0px; background-position: 0px 0px; }
+2% {left:10px; background-position: -32px 0px;}
+3.99% {left:10px; background-position: -32px 0px;}
+4% {left:20px; background-position: 0px 0px; }
+5.99% {left:20px; background-position: 0px 0px; }
+6% {left:30px; background-position: -32px 0px;}
+7.99% {left:30px; background-position: -32px 0px;}	
+8% {left:40px; background-position: 0px 0px;}
+9.99% {left:40px; background-position: 0px 0px;}
+10% {left:50px; background-position: -32px 0px;}
+11.99% {left:50px; background-position: -32px 0px;}
+12% {left:60px; background-position: 0px 0px; }
+13.99% {left:60px; background-position: 0px 0px; }
+14% {left:70px; background-position: -32px 0px;}
+15.99% {left:70px; background-position: -32px 0px;}	
+16% {left:80px; background-position: 0px 0px;}
+17.99% {left:80px; background-position: 0px 0px;}
+18% {left:90px; background-position: -32px 0px;}
+19.99% {left:90px; background-position: -32px 0px;}	
+
+20% {left:100px; background-position: -64px 0px;}
+27.99% {left:100px; background-position: -64px 0px;}	
+
+28% {left:100px; background-position: -96px 0px;}
+31.99% {left:100px; background-position: -96px 0px;}	
+
+
+32% {left:100px; background-position: -128px 0px;}
+33.99% {left:100px; background-position: -128px 0px;}	
+34% {left:100px; background-position: -160px 0px;}
+35.99% {left:100px; background-position: -160px 0px;}	
+36% {left:100px; background-position: -128px 0px;}
+37.99% {left:100px; background-position: -128px 0px;}	
+38% {left:100px; background-position: -160px 0px;}
+39.99% {left:100px; background-position: -160px 0px;}	
+40% {left:100px; background-position: -128px 0px;}
+41.99% {left:100px; background-position: -128px 0px;}	
+42% {left:100px; background-position: -160px 0px;}
+43.99% {left:100px; background-position: -160px 0px;}
+
+44% {left:100px; background-position: -192px 0px;}
+45.99% {left:100px; background-position: -192px 0px;}	
+46% {left:100px; background-position: -224px 0px;}
+47.99% {left:100px; background-position: -224px 0px;}	
+48% {left:100px; background-position: -192px 0px;}
+49.99% {left:100px; background-position: -192px 0px;}	
+50% {left:100px; background-position: -224px 0px;}
+51.99% {left:100px; background-position: -224px 0px;}	
+52% {left:100px; background-position: -192px 0px;}
+53.99% {left:100px; background-position: -192px 0px;}	
+54% {left:100px; background-position: -224px 0px;}
+55.99% {left:100px; background-position: -224px 0px;}	
+
+56% {left:100px; background-position: -256px 0px;}
+61.99% {left:100px; background-position: -256px 0px;}	
+
+62%  {left:110px; background-position: 0px 0px; }
+63.99%  {left:110px; background-position: 0px 0px; }
+64% {left:120px; background-position: -32px 0px;}
+65.99% {left:120px; background-position: -32px 0px;}
+66% {left:130px; background-position: 0px 0px; }
+67.99% {left:130px; background-position: 0px 0px; }
+68% {left:140px; background-position: -32px 0px;}
+69.99% {left:140px; background-position: -32px 0px;}	
+70% {left:150px; background-position: 0px 0px;}
+71.99% {left:150px; background-position: 0px 0px;}
+72% {left:160px; background-position: -32px 0px;}
+73.99% {left:160px; background-position: -32px 0px;}
+74% {left:170px; background-position: 0px 0px; }
+75.99% {left:170px; background-position: 0px 0px; }
+76% {left:180px; background-position: -32px 0px;}
+77.99% {left:180px; background-position: -32px 0px;}	
+78% {left:190px; background-position: 0px 0px;}
+79.99% {left:190px; background-position: 0px 0px;}
+80% {left:200px; background-position: -32px 0px;}
+81.99% {left:200px; background-position: -32px 0px;}
+82% {left:210px; background-position: 0px 0px;}
+83.99% {left:210px; background-position: 0px 0px;}
+84% {left:220px; background-position: -32px 0px;}
+85.99% {left:220px; background-position: -32px 0px;}
+
+86% {left:220px; width:32px; background-position: -64px 0px;}
+99.99% {left:220px; background-position: -64px 0px;}	
+
+100% {left: 220px; width:0px;}
+}
+
+@-moz-keyframes mymove /* Firefox */
+{	
+0%  {left:0px; background-position: 0px 0px; }
+1.99%  {left:0px; background-position: 0px 0px; }
+2% {left:10px; background-position: -32px 0px;}
+3.99% {left:10px; background-position: -32px 0px;}
+4% {left:20px; background-position: 0px 0px; }
+5.99% {left:20px; background-position: 0px 0px; }
+6% {left:30px; background-position: -32px 0px;}
+7.99% {left:30px; background-position: -32px 0px;}	
+8% {left:40px; background-position: 0px 0px;}
+9.99% {left:40px; background-position: 0px 0px;}
+10% {left:50px; background-position: -32px 0px;}
+11.99% {left:50px; background-position: -32px 0px;}
+12% {left:60px; background-position: 0px 0px; }
+13.99% {left:60px; background-position: 0px 0px; }
+14% {left:70px; background-position: -32px 0px;}
+15.99% {left:70px; background-position: -32px 0px;}	
+16% {left:80px; background-position: 0px 0px;}
+17.99% {left:80px; background-position: 0px 0px;}
+18% {left:90px; background-position: -32px 0px;}
+19.99% {left:90px; background-position: -32px 0px;}	
+
+20% {left:100px; background-position: -64px 0px;}
+27.99% {left:100px; background-position: -64px 0px;}	
+
+28% {left:100px; background-position: -96px 0px;}
+31.99% {left:100px; background-position: -96px 0px;}	
+
+
+32% {left:100px; background-position: -128px 0px;}
+33.99% {left:100px; background-position: -128px 0px;}	
+34% {left:100px; background-position: -160px 0px;}
+35.99% {left:100px; background-position: -160px 0px;}	
+36% {left:100px; background-position: -128px 0px;}
+37.99% {left:100px; background-position: -128px 0px;}	
+38% {left:100px; background-position: -160px 0px;}
+39.99% {left:100px; background-position: -160px 0px;}	
+40% {left:100px; background-position: -128px 0px;}
+41.99% {left:100px; background-position: -128px 0px;}	
+42% {left:100px; background-position: -160px 0px;}
+43.99% {left:100px; background-position: -160px 0px;}
+
+44% {left:100px; background-position: -192px 0px;}
+45.99% {left:100px; background-position: -192px 0px;}	
+46% {left:100px; background-position: -224px 0px;}
+47.99% {left:100px; background-position: -224px 0px;}	
+48% {left:100px; background-position: -192px 0px;}
+49.99% {left:100px; background-position: -192px 0px;}	
+50% {left:100px; background-position: -224px 0px;}
+51.99% {left:100px; background-position: -224px 0px;}	
+52% {left:100px; background-position: -192px 0px;}
+53.99% {left:100px; background-position: -192px 0px;}	
+54% {left:100px; background-position: -224px 0px;}
+55.99% {left:100px; background-position: -224px 0px;}	
+
+56% {left:100px; background-position: -256px 0px;}
+61.99% {left:100px; background-position: -256px 0px;}	
+
+62%  {left:110px; background-position: 0px 0px; }
+63.99%  {left:110px; background-position: 0px 0px; }
+64% {left:120px; background-position: -32px 0px;}
+65.99% {left:120px; background-position: -32px 0px;}
+66% {left:130px; background-position: 0px 0px; }
+67.99% {left:130px; background-position: 0px 0px; }
+68% {left:140px; background-position: -32px 0px;}
+69.99% {left:140px; background-position: -32px 0px;}	
+70% {left:150px; background-position: 0px 0px;}
+71.99% {left:150px; background-position: 0px 0px;}
+72% {left:160px; background-position: -32px 0px;}
+73.99% {left:160px; background-position: -32px 0px;}
+74% {left:170px; background-position: 0px 0px; }
+75.99% {left:170px; background-position: 0px 0px; }
+76% {left:180px; background-position: -32px 0px;}
+77.99% {left:180px; background-position: -32px 0px;}	
+78% {left:190px; background-position: 0px 0px;}
+79.99% {left:190px; background-position: 0px 0px;}
+80% {left:200px; background-position: -32px 0px;}
+81.99% {left:200px; background-position: -32px 0px;}
+82% {left:210px; background-position: 0px 0px;}
+83.99% {left:210px; background-position: 0px 0px;}
+84% {left:220px; background-position: -32px 0px;}
+85.99% {left:220px; background-position: -32px 0px;}
+
+86% {left:220px; width:32px; background-position: -64px 0px;}
+99.99% {left:220px; background-position: -64px 0px;}	
+
+100% {left: 220px; width:0px;}
+}
+
+@-webkit-keyframes mymove /* Safari and Chrome */
+{
+0%  {left:0px; background-position: 0px 0px; }
+1.99%  {left:0px; background-position: 0px 0px; }
+2% {left:10px; background-position: -32px 0px;}
+3.99% {left:10px; background-position: -32px 0px;}
+4% {left:20px; background-position: 0px 0px; }
+5.99% {left:20px; background-position: 0px 0px; }
+6% {left:30px; background-position: -32px 0px;}
+7.99% {left:30px; background-position: -32px 0px;}	
+8% {left:40px; background-position: 0px 0px;}
+9.99% {left:40px; background-position: 0px 0px;}
+10% {left:50px; background-position: -32px 0px;}
+11.99% {left:50px; background-position: -32px 0px;}
+12% {left:60px; background-position: 0px 0px; }
+13.99% {left:60px; background-position: 0px 0px; }
+14% {left:70px; background-position: -32px 0px;}
+15.99% {left:70px; background-position: -32px 0px;}	
+16% {left:80px; background-position: 0px 0px;}
+17.99% {left:80px; background-position: 0px 0px;}
+18% {left:90px; background-position: -32px 0px;}
+19.99% {left:90px; background-position: -32px 0px;}	
+
+20% {left:100px; background-position: -64px 0px;}
+27.99% {left:100px; background-position: -64px 0px;}	
+
+28% {left:100px; background-position: -96px 0px;}
+31.99% {left:100px; background-position: -96px 0px;}	
+
+
+32% {left:100px; background-position: -128px 0px;}
+33.99% {left:100px; background-position: -128px 0px;}	
+34% {left:100px; background-position: -160px 0px;}
+35.99% {left:100px; background-position: -160px 0px;}	
+36% {left:100px; background-position: -128px 0px;}
+37.99% {left:100px; background-position: -128px 0px;}	
+38% {left:100px; background-position: -160px 0px;}
+39.99% {left:100px; background-position: -160px 0px;}	
+40% {left:100px; background-position: -128px 0px;}
+41.99% {left:100px; background-position: -128px 0px;}	
+42% {left:100px; background-position: -160px 0px;}
+43.99% {left:100px; background-position: -160px 0px;}
+
+44% {left:100px; background-position: -192px 0px;}
+45.99% {left:100px; background-position: -192px 0px;}	
+46% {left:100px; background-position: -224px 0px;}
+47.99% {left:100px; background-position: -224px 0px;}	
+48% {left:100px; background-position: -192px 0px;}
+49.99% {left:100px; background-position: -192px 0px;}	
+50% {left:100px; background-position: -224px 0px;}
+51.99% {left:100px; background-position: -224px 0px;}	
+52% {left:100px; background-position: -192px 0px;}
+53.99% {left:100px; background-position: -192px 0px;}	
+54% {left:100px; background-position: -224px 0px;}
+55.99% {left:100px; background-position: -224px 0px;}	
+
+56% {left:100px; background-position: -256px 0px;}
+61.99% {left:100px; background-position: -256px 0px;}	
+
+62%  {left:110px; background-position: 0px 0px; }
+63.99%  {left:110px; background-position: 0px 0px; }
+64% {left:120px; background-position: -32px 0px;}
+65.99% {left:120px; background-position: -32px 0px;}
+66% {left:130px; background-position: 0px 0px; }
+67.99% {left:130px; background-position: 0px 0px; }
+68% {left:140px; background-position: -32px 0px;}
+69.99% {left:140px; background-position: -32px 0px;}	
+70% {left:150px; background-position: 0px 0px;}
+71.99% {left:150px; background-position: 0px 0px;}
+72% {left:160px; background-position: -32px 0px;}
+73.99% {left:160px; background-position: -32px 0px;}
+74% {left:170px; background-position: 0px 0px; }
+75.99% {left:170px; background-position: 0px 0px; }
+76% {left:180px; background-position: -32px 0px;}
+77.99% {left:180px; background-position: -32px 0px;}	
+78% {left:190px; background-position: 0px 0px;}
+79.99% {left:190px; background-position: 0px 0px;}
+80% {left:200px; background-position: -32px 0px;}
+81.99% {left:200px; background-position: -32px 0px;}
+82% {left:210px; background-position: 0px 0px;}
+83.99% {left:210px; background-position: 0px 0px;}
+84% {left:220px; background-position: -32px 0px;}
+85.99% {left:220px; background-position: -32px 0px;}
+
+86% {left:220px; width:32px; background-position: -64px 0px;}
+99.99% {left:220px; background-position: -64px 0px;}	
+
+100% {left: 220px; width:0px;}
+}
+
+@-webkit-keyframes miao /* Safari and Chrome */
+{
+		0%		{background-position: -96px 0px; }
+		40.99%	{background-position: -96px 0px; }
+
+		41% 	{background-position: -64px 0px;}
+		70.99% 	{background-position: -64px 0px;}
+
+		71% 	{background-position: -64px 0px; }
+		100%	{background-position: -64px 0px; }	
+}
+
+#neko {
+	width: 32px;
+	height: 32px;
+	position: relative;		
+	background-image:url('./neko.gif');
+	background-position: -64px 0px;
+	background-repeat:no-repeat;
+}
+</style>
+</head>
+
+<body>
+
+<div id="neko"></div>
+<video controls="" name="media" id="miao" style="display:none">
+	<source src="./kitten4.wav" type="audio/x-wav">
+</video>
+<script type="text/javascript" src="./jquery.min.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function() {
+		// body...
+
+		// animation: mymove 8s infinite;
+		// -moz-animation: mymove 8s infinite;  
+		// -webkit-animation: mymove 8s infinite;
+
+			var miao_ctl=$("#miao")[0];
+			var neko_ctl=$("#neko");
+
+			neko_ctl.on('webkitAnimationEnd', function() {
+			    this.style.webkitAnimationPlayState = "paused";
+			    neko_ctl.css("-webkit-animation","mymove 6s");
+			    this.style.webkitAnimationPlayState = "running";
+			});
+			
+			neko_ctl.click(function(){
+					 neko_ctl.css("-webkit-animation","miao 3s");
+					 this.style.webkitAnimationPlayState = "running";
+					 miao_ctl.play();
+					 setTimeout(function(){
+					 		miao_ctl.play();
+					 },4800);
+			});
+		//var a=$("#neko").css("-webkit-animation","miao 3s");
+		//console.log(a);
+	});
+
+
+</script>
+</body>
+
+</html>
